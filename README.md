@@ -22,7 +22,7 @@ scafold a new component: `gulp component` [Read below](#generating-components) f
 --------
 The app was initially an NG6-starter starter, then additional components were developed to achieve a pokedex app.
 
-In order to reduce server and increase navigation speed data requested is never is never asked for twice.
+In order to reduce server requests and increase navigation speed data requested is never is never asked for twice, it is stored in case it is needed again.
 
 
 ### preprocessors, frameworks and why
