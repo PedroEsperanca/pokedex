@@ -1,7 +1,5 @@
 # Pokédex
 
----
-
 ### Live Demo
 --------
 http://pedroesperanca.github.io/pokedex
@@ -30,7 +28,7 @@ In order to reduce server and increase navigation speed data requested is never 
 ### preprocessors, frameworks and why
 --------
 
-- scss: much more organized than regular css
+- sass: much more organized than regular css
 
 - angular: this framework offers support for all parts of an MVC app
 
@@ -48,7 +46,7 @@ Following a consistent directory structure between components offers us the cert
 ⋅⋅⋅⋅⋅⋅⋅⋅componentName.component.js
 ⋅⋅⋅⋅⋅⋅⋅⋅componentName.controller.js
 ⋅⋅⋅⋅⋅⋅⋅⋅componentName.html
-⋅⋅⋅⋅⋅⋅⋅⋅componentName.styl // scoped to affect only its own template
+⋅⋅⋅⋅⋅⋅⋅⋅componentName.sass // scoped to affect only its own template
 ⋅⋅⋅⋅⋅⋅⋅⋅componentName.spec.js // contains passing demonstration tests
 ```
 
