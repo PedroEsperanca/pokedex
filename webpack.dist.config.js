@@ -3,9 +3,9 @@ var path    = require('path');
 var config  = require('./webpack.config');
 
 config.output = {
-  filename: 'pokedex/[name].bundle.js', // adding 'pokedex/' in the index.html is necessary
-  publicPath: '',
-  path: path.resolve(__dirname, 'docs') // dist -> docs
+  filename: '[name].bundle.js',
+  publicPath: 'pokedex/',
+  path: path.resolve(__dirname, 'docs')
 };
 
 config.plugins = config.plugins.concat([
