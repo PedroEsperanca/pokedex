@@ -16,6 +16,9 @@ class PokemonviewController {
       '//pokeapi.co/api/v2/pokemon/'+$stateParams.id,
       (err, pokemon) => {
 
+        delete pokemon.moves;
+        delete pokemon.game_indices;
+
         this.pokemon = pokemon;
 
         $http({
