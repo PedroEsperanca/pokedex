@@ -24,7 +24,7 @@ class PokemonviewController {
         }).then((response) => { //success function
 
           //add the reponse to the pokemon
-          pokemon.characteristic = response.data;
+          this.pokemon.characteristic = response.data;
 
         });
 

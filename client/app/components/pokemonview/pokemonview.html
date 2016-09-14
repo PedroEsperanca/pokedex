@@ -2,23 +2,22 @@
 <div class="container main-container">
   <div class="row top-pokemon-navigator">
     <a
-      ng-show="$ctrl.previousPokemon"
-      ui-sref="pokemonview({ id: $ctrl.previousPokemon.id })"
+      href=""
     >
-      <span class="id"># {{$ctrl.previousPokemon.id}}</span>
-      <b>{{$ctrl.previousPokemon.name}}</b>
+      <span class="id"># ID</span>
+      <b>PREVIOUS POKEMON NAME</b>
     </a>
     <a
       class="pull-right"
-      ui-sref="pokemonview({ id: $ctrl.nextPokemon.id })"
+      href=""
     >
-      <b>{{$ctrl.nextPokemon.name}}</b>
-      <span class="id"># {{$ctrl.nextPokemon.id}}</span>
+      <b>NEXT POKEMON NAME</b>
+      <span class="id"># ID</span>
     </a>
   </div>
 
   <h1 class="text-center pokemon-page-name">
-    {{$ctrl.pokemon.name}}
+    POKEMON NAME
   </h1>
 
   <div class="pokemon-info">
@@ -28,37 +27,33 @@
       >
           <div class="img-cnt">
             <img
-              ng-src="http://pokeunlock.com/wp-content/uploads/2015/01/{{$ctrl.pokemon.id | threeNumbersAlways}}.png"
+              ng-src="http://pokeunlock.com/wp-content/uploads/2015/01/001.png"
               onerror='this.style.display = "none"'
             />
           </div>
           <div class="types-cnt">
             <div
-              ng-show="$ctrl.pokemon.types[0]"
-              class="type"
-              ng-class="$ctrl.pokemon.types[0].name"
+              class="type grass"
             >
-              {{$ctrl.pokemon.types[0].name}}
+              TYPE 1
             </div>
             <div
-              ng-show="$ctrl.pokemon.types[1]"
-              class="type"
-              ng-class="$ctrl.pokemon.types[1].name"
+              class="type grass"
             >
-              {{$ctrl.pokemon.types[1].name}}
+              TYPE 2
             </div>
           </div>
       </div>
 
       <div class="pokemon-description">
-        {{$ctrl.pokemon.characteristic.descriptions[1].description}}
+        DESCRIPTION (advanced)
       </div>
     </div>
     <div class="right-col">
       <div class="pokemon-specs">
         <div class="spec">
           <div class="spec-title">Height</div>
-          <div class="spec-data">{{$ctrl.pokemon.height/10}} m</div>
+          <div class="spec-data">TODO m</div>
         </div>
         <div class="spec">
           <div class="spec-title">Category</div>
@@ -66,15 +61,15 @@
         </div>
         <div class="spec">
           <div class="spec-title">Weight</div>
-          <div class="spec-data">{{$ctrl.pokemon.weight/10}} kg</div>
+          <div class="spec-data">TODO kg</div>
         </div>
         <div class="spec">
           <div class="spec-title">Abilities</div>
-          <div class="spec-data">{{$ctrl.pokemon.abilities[0].name}}</div>
+          <div class="spec-data">TODO</div>
         </div>
         <div class="spec">
           <div class="spec-title">Gender (M/F)</div>
-          <div class="spec-data">{{$ctrl.pokemon.male_female_ratio}}</div>
+          <div class="spec-data">TODO</div>
         </div>
       </div>
       <div class="pokemon-stats">
@@ -82,20 +77,49 @@
 
         <div
           class="stat-col-cntn"
-          ng-repeat="stat in $ctrl.pokemon.stats"
         >
           <div class="stat-col">
             <div
               class="stat-col-fill"
-              ng-style="{
-                'height': stat.base_stat + 'px'
-              }"
+              style="height: 40px"
             ></div>
           </div>
           <div class="stat-name">
-            {{stat.stat.name}}
+            STAT NAME
           </div>
         </div>
+
+        <div
+          class="stat-col-cntn"
+        >
+          <div class="stat-col">
+            <div
+              class="stat-col-fill"
+              style="height: 40px"
+            ></div>
+          </div>
+          <div class="stat-name">
+            STAT NAME
+          </div>
+        </div>
+
+        <div
+          class="stat-col-cntn"
+        >
+          <div class="stat-col">
+            <div
+              class="stat-col-fill"
+              style="height: 40px"
+            ></div>
+          </div>
+          <div class="stat-name">
+            STAT NAME
+          </div>
+        </div>
+
+
+
+
       </div>
     </div>
   </div>
@@ -105,9 +129,20 @@
     <h2>Moves</h2>
 
     <ul class="moves-list">
-      <li ng-repeat="move in $ctrl.pokemon.moves">
-        {{move.move.name}}
+
+      <li>
+        move 1
       </li>
+      <li>
+        move 2
+      </li>
+      <li>
+        move 3
+      </li>
+      <li>
+        move 4
+      </li>
+
     </ul>
 
   </div>
